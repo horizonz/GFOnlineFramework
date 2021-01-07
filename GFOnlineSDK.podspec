@@ -29,9 +29,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 #这个是找到对应framework的路径，我是放在Framework下的，请按照我的填写来找到对应你自己的填写
   s.ios.vendored_frameworks = 'Framework/GFOnlineSDK.framework'
-  s.dependency "PolyvVodSDK", "~> 2.10.0"
-  s.dependency "PLVVodDanmu"
-  s.dependency "PLVSubtitle"
+#  s.frameworks =  "Foundation","UIKit"
+ # s.dependency "PolyvVodSDK", "~> 2.10.0"
+  #s.dependency "PLVVodDanmu"
+ # s.dependency "PLVSubtitle"
 
 
 end
