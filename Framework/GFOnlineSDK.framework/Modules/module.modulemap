@@ -1,0 +1,6 @@
+framework module GFOnlineSDK {
+  umbrella header "GFOnlineSDK.h"
+
+  export *
+  module * { export * }
+}
