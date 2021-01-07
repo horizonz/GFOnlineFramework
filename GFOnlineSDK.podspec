@@ -2,14 +2,14 @@ Pod::Spec.new do |s|
 #项目名
   s.name         = "GFOnlineSDK"
 #版本号，需要与你git打的tag一致
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
 #项目的一个摘要或简介
   s.summary      = "gfedu_Framework"
 #项目支持的最低iOS系统
   s.ios.deployment_target = '9.0'
 #项目的具体描述
   s.description  = <<-DESC
-  firstVersion
+  firstVersion_gfedu_Framework
   DESC
 #项目在github上的地址
   s.homepage     = "https://github.com/horizonz/GFOnlineFramework.git"
@@ -30,9 +30,9 @@ Pod::Spec.new do |s|
 #这个是找到对应framework的路径，我是放在Framework下的，请按照我的填写来找到对应你自己的填写
   s.ios.vendored_frameworks = 'Framework/GFOnlineSDK.framework'
 #  s.frameworks =  "Foundation","UIKit"
- # s.dependency "PolyvVodSDK", "~> 2.10.0"
-  #s.dependency "PLVVodDanmu"
- # s.dependency "PLVSubtitle"
+  s.dependency "PolyvVodSDK", "~> 2.10.0"
+  s.dependency "PLVVodDanmu"
+  s.dependency "PLVSubtitle"
 
 
 end
