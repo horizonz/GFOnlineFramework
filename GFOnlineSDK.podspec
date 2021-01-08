@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 #项目名
   s.name         = "GFOnlineSDK"
 #版本号，需要与你git打的tag一致
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
 #项目的一个摘要或简介
   s.summary      = "gfedu_Framework"
 #项目支持的最低iOS系统
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   # Or just: s.author    = "weimeng"
   # s.authors            = { "weimeng" => "r51@foxmail.com" }
 #项目代码地址
-  s.source       = { :git => "https://github.com/horizonz/GFOnlineFramework.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/horizonz/GFOnlineFramework.git", :tag => "1.0.2" }
 #项目库中需要包含的源文件
   s.source_files  = 'Framework/**/*.{h,m}'
 #公开的头文件
@@ -29,6 +29,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 #这个是找到对应framework的路径，我是放在Framework下的，请按照我的填写来找到对应你自己的填写
   s.ios.vendored_frameworks = 'Framework/GFOnlineSDK.framework'
+  #资源文件 spec.resources = ['Images/*.png', 'Sounds/*'] （多个资源目录） 如下为单个
+  s.resource = 'Framework/GFOnlineSDK.framework'
 #  s.frameworks =  "Foundation","UIKit"
   s.dependency "PolyvVodSDK", "~> 2.10.0"
   s.dependency "PLVVodDanmu"
