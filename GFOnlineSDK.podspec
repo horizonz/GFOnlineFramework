@@ -30,7 +30,11 @@ Pod::Spec.new do |s|
 #这个是找到对应framework的路径，我是放在Framework下的，请按照我的填写来找到对应你自己的填写
   s.ios.vendored_frameworks = 'Framework/GFOnlineSDK.framework'
   #资源文件 spec.resources = ['Images/*.png', 'Sounds/*'] （多个资源目录） 如下为单个
-  s.resource = 'Framework/GFOnlineSDK.framework'
+  #s.resource = 'Framework/GFOnlineSDK.framework'
+  #spec.resource_bundles = {
+  #  'Framework' => ['Framework/**/*.{xib,png,xcassets}']
+  #}
+  s.resources = "Framework/**/*.{xib,png}"
 #  s.frameworks =  "Foundation","UIKit"
   s.dependency "PolyvVodSDK", "~> 2.10.0"
   s.dependency "PLVVodDanmu"
