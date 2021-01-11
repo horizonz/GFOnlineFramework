@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 #项目名
   s.name         = "GFOnlineSDK"
 #版本号，需要与你git打的tag一致
-  s.version      = "1.0.2"
+  s.version      = "1.0.5"
 #项目的一个摘要或简介
   s.summary      = "gfedu_Framework"
 #项目支持的最低iOS系统
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   # Or just: s.author    = "weimeng"
   # s.authors            = { "weimeng" => "r51@foxmail.com" }
 #项目代码地址
-  s.source       = { :git => "https://github.com/horizonz/GFOnlineFramework.git", :tag => "1.0.2" }
+  s.source       = { :git => "https://github.com/horizonz/GFOnlineFramework.git", :tag => "1.0.5" }
 #项目库中需要包含的源文件
   s.source_files  = 'Framework/**/*.{h,m}'
 #公开的头文件
